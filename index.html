@@ -18,21 +18,43 @@ se tem só uma vez é id="..."
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Links e Divisões</title>
+    <style>
+        /* Usar seletores */
+        
+        h1 {
+            /* Seletor (todos os h1) */
+            background-color: rgb(59, 89, 152);
+            font-family: Courier New, Courier, monospace;
+        }
+        
+        section h2 {
+            /* qualquer h2 dentro de section */
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+        
+        section h3 {
+            margin-top: 3em;
+            color: rgb(180, 0, 200);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- <div id=header></div>
     <div id="main"></div>
     <div id="footer"></div> -->
-
     <header>
-        <h1 id="cima">DBO site!</h1>
+        <!-- CSS in-line: Não recomendado (Não fazer) -->
+        <h1 style="color:aliceblue; font-size:3em" id="cima">DBO site!</h1>
         <nav>
             <a href="#av">&darr;</a>
         </nav>
     </header>
     <main>
         <h2>Notícias</h2>
+        <a class="botao" href="semmouse.html">Notícias</a>
         <section id="noticias">
             <article>
                 <h3>
@@ -95,7 +117,7 @@ se tem só uma vez é id="..."
                 <a href="#cima">&uarr;</a>
             </article>
         </section>
-        <section class="atividades">
+        <section class="atividades menor">
             <h2>Atividades</h2>
         </section>
     </main>
